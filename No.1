@@ -1,0 +1,13 @@
+nl = []
+while True:
+    num = input("Enter a number: ")
+    try:
+        if num == "down":
+            break
+        else:
+            nl.append(int(num))
+    except:
+        print("Invalid input")
+        continue
+print("Maximum is", max(nl))
+print("Minimum is", min(nl))
